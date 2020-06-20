@@ -1,13 +1,21 @@
 <template>
-  
+  <div class="flex flex-col flex-1 h-screen overflow-y-hidden" v-if="authUser">
+      <Nav />
+      <router-view ></router-view>
+  </div>
 </template>
 
 <script>
-export default {
+    import Nav from './Nav';
+    export default {
+        name:"App",
 
-}
+        components: {
+            Nav
+        }
+    }
 </script>
 
-<style>
+<style scoped>
 
 </style>

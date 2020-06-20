@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import home from './views/home.vue'
+import home from './views/home';
 
 //tell vue that we are using vue router as a plugin
 Vue.use(VueRouter);
